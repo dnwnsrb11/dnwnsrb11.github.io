@@ -6,52 +6,55 @@
     <title>Document</title>
     <style>
 #box1 {
-  position: fixed;
-  top: 50px;
-  left: 20px;
-  width: 300px;
-  height: 200px;
-  font-size: 30px;
-  color: black;
-  background-color: #00D669;
-  border: dashed 10px #D62E11;
-  border-radius: 24px 0 24px 0;
+  width: 600px;
+  height: 300px;
+  background-color: #80deea;
+  font-size: 48px;
 }
-
 #box2 {
   position: fixed;
-  top: 270px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
+  bottom: 400px;
+  right: 500px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
   font-size: 30px;
-  color: #00ff00;
-  background-color: black;
-  border-radius: 10px;
+}
+#box3 {
+    position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: #ff9999;
+  font-size: 48px;
+}
+#input {
+  margin-top: 16px;
+  width: 600px;
+  height: 60px;
+  font-size: 48px;
+  padding: 0;
+}
+#button {
+  width: 200px;
+  height: 60px;
+  font-size: 36px;
+  margin-top: 16px;
+  background-color: #80deea;
+  border-radius: 32px;
+  border: dashed 2px #000000;
 }
 
-#box3 {
-  position: fixed;
-  top: 270px;
-  left: 270px;
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
-  color: #00ff00;
-  background-color: black;
-  border-radius: 10px;
-}
     </style>
 </head>
 <body>
     
-    <header class="header"
-        <div class="header__square">고급디지털표현 수업</div>
-        <div class="header__title">우준규, 박성지, 최다성</div>
-    </header>
-    <div id="box1">box1</div>
-    <div id="box2">box2</div>
-    <div id="box3">box3</div>
+  <div id="box1">BOX1</div>
+  <div id="box2">BOX2</div>
+  <div id="box3">BOX3</div>
+  <input id="input" type="text"><br>
+  <button id="button" onclick="myFunction()">RUN</button>
 
 </body>
 </html>

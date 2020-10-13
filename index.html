@@ -35,10 +35,26 @@
     height: 100px;
     background-color: #c6ff00;
 }
+#button4 {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #c6ff00;
+}
 #box2 {
     display: none;
     position: relative;
     width: 600px;
+    height: 200px;
+    background-color: #ffeb3b;
+}
+#box3 {
+  display: none;
+    position: relative;
+    width: 300px;
     height: 200px;
     background-color: #ffeb3b;
 }
@@ -66,6 +82,9 @@ $(document).ready(function(){
     $('#button3').on('click', function(){
         $(this).hide();
         $('#box2').hide(600);
+    });
+    $('button4').on('click', function(){
+      $('#box3').toggle(600);
     });
 });
 </script>

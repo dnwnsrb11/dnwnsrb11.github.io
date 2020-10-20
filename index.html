@@ -3,42 +3,10 @@
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
-    #button1 {
-    width: 400px;
-    height: 120px;
-    background-color: beige;
-}
 #box1 {
     width: 400px;
     height: 300px;
     background-color: aquamarine;
-}
-#container2 {
-    position: absolute;
-    top: 200px;
-    left: 600px;
-}
-#button2 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #ea80fc;
-}
-#button3 {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #c6ff00;
-}
-#button4 {
-  width: 600px;
-    height: 200px;
-    background-color: beige;
 }
 #box2 {
     display: none;
@@ -56,32 +24,17 @@
 
 </head>
 <body>
-<div id="button1">button1</div>
 <div id="box1">box1</div>
-<div id="container2">
-    <div id="button2">button2</div>
-    <div id="button3">button3</div>
     <div id="box2">box2</div>
-    <div id="button4">button4</div>
     <div id="box3">box3</div>
 </div>
 
 <script>
 $(document).ready(function(){
-    $('#button1').on('click', function(){
-        $('#box1').toggle(600);
-    });
-    $('#button2').on('click', function(){
-        $('#button3').show();
-        $('#box2').show(600);
-    });
-    $('#button3').on('click', function(){
-        $(this).hide();
-        $('#box2').hide(600);
-    });
-    $('#button4').on('click', function(){
-      $('#box3').toggle(600);
-    });
+    $('#box1').animate({
+        'left': '600px',
+        'opacity': '1.0'
+    }, 10000);
 });
 </script>
 </body>

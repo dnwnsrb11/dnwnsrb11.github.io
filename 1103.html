@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style1103.css">
+    <script src="jquery-3.5.1.js"></script>
+    <title>20201103 / 레이아웃 예제</title>
+</head>
+<body>
+<div id="container1">
+    <div class="logo">
+      <a href="#">  <a href="index.html"><img class="logo" src="logo1.png"></a>
+    <div class="container">
+ 
+
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div id="box1"><img id="image1" src="온도계아이덴티티.png"></div>
+    <div id="box2"><img id="image1" src="woo_main.jpg"></div>
+    <div id="box3"><img id="image1" src="choi_main1.png"></div>
+
+</div>
+
+<div class="section">
+    <p>
+   Woo jun Gyu <br>
+        dnwnsrb11@naver.com
+    </p>
+</div>
+
+<div class="section1">
+    <p>
+   Woo jun Gyu <br>
+        dnwnsrb11@naver.com
+    </p>
+</div>
+
+<div class="section2">
+    <p>
+   Woo jun Gyu <br>
+        dnwnsrb11@naver.com
+    </p>
+</div>
+
+    <script>
+    $(document).ready(function(){
+    $isOn = false;
+    
+    $('#box1').on('mouseover', function(){
+        if(!$isOn) {
+            $('#box1').animate({
+                'right': '0px',
+                'opacity' : '1.0'
+            }, 300);
+            $isOn = true;
+        } else {
+            $('#box1').animate({
+                'right': '-200px',
+                'opacity' : '0.0'
+            }, 300);
+            $isOn = false;            
+        }
+    });
+
+    $('#box2').on('mouseover', function(){
+        if(!$isOn) {
+            $('#box2').animate({
+                'right': '0px',
+                'opacity' : '1.0'
+            }, 300);
+            $isOn = true;
+        } else {
+            $('#box2').animate({
+                'right': '-200px',
+                'opacity' : '0.0'
+            }, 300);
+            $isOn = false;            
+        }
+    });
+
+    $('#box3').on('mouseover', function(){
+        if(!$isOn) {
+            $('#box3').animate({
+                'right': '0px',
+                'opacity' : '1.0'
+            }, 300);
+            $isOn = true;
+        } else {
+            $('#box3').animate({
+                'right': '-200px',
+                'opacity' : '0.0'
+            }, 300);
+            $isOn = false;            
+        }
+    });
+   
+});
+
+        
+    </script>
+
+    
+</div>
+</body>
+    
+</html>

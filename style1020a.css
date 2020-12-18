@@ -1,0 +1,28 @@
+#button {
+    width: 50px;
+ 
+}
+
+#image1{
+    width: 100%;
+}
+#box {
+    position: fixed;
+    top: 0px;
+    right: -400px;
+    width: 900px;
+    height: 1200px;
+    background-color: coral;
+    opacity: 0.0;
+    text-align: left;
+    
+    font-size: 30px;
+    padding: 10em 70px;
+}
+
+span {
+
+    display: inline-block;
+    line-height: 140px;
+
+}
